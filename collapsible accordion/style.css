@@ -1,0 +1,128 @@
+#faq {
+    list-style-type: none;
+  }
+  
+  
+  /*Hide anyting in inactive sections that are not buttons*/
+  
+  #faq>:not(.active)> :not(button) {
+    display: none;
+  }
+  
+  
+  /*Style the active button span*/
+  
+  #faq>.active button>span {
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+  }
+  
+  
+  /*Style the active button image*/
+  
+  #faq>.active button>img {
+    transform: scaleY(-1);
+    margin-top: 5px;
+  }
+
+
+  .parent-container {
+    margin-left: 100px;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .child-container {
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .child-container:hover {
+    border: 1.5px solid green;
+    background-color: rgb(211, 224, 211);
+  }
+  .collapsible:hover {
+      background-color: rgb(211, 224, 211);
+  }
+  .collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .main-1 {
+    display: flex;
+  }
+  /* input >[type]{
+      border-radius: 50%;
+  } */
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+  }
+  .size-content label {
+    margin-left: 40px;
+  }
+  
+  .color-content label {
+    margin-left: 10px;
+  }
+  .size-content span {
+    margin: 4px;
+  }
+  
+  select {
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 8px;
+    cursor: pointer;
+  }
+  select:hover{
+      border:1px solid green;
+  }
+  .shipping-container {
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0;
+    justify-content: space-around;
+  }
+  
+  .shipping {
+    color: green;
+  }
+  
+  .btn {
+    background-color: rgb(18, 161, 18);
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+    color: white;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  input {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
